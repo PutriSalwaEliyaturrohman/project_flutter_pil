@@ -1,7 +1,12 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:unicons/unicons.dart';
+import 'package:project_flutter_pil/app/utils/widget/header.dart';
+import 'package:project_flutter_pil/app/utils/widget/sideBar.dart';
+
+
 
 import '../controllers/home_controller.dart';
 
@@ -13,49 +18,25 @@ class HomeView extends GetView<HomeController> {
       backgroundColor: Colors.blue[100],
       body: Row(
         children: [
-        Expanded(
+       const Expanded(
           flex: 2,
-          child: Container(
-            color: Colors.blue[100],
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    height:100,
-                    alignment: Alignment.topCenter,
-                    child: Image(
-                    image: AssetImage('assets/icons/icon.png')
-                  ),
-                ),
-                SizedBox(
-                  height: 100,
-                  child: Center( child: InkWell(
-                  child: Column (
-                    children: [
-                      Container(
-                        child: Icon(UniconsLine.laptop,),
-                      ),
-                      Text(
-                      'Home',
-                       style: TextStyle(
-                       color: Colors.grey,
-                       fontSize: 16,
-                      ),
-                      ),
-                      ])
-                  ))
-                )
-                ],
-              ),
-            )
-            )),
+          child: SideBar()),
         Expanded(
           flex: 15,
-          child: Container(
-            color: Colors.white,
-            ))
+          child: Column(children: [
+            header(),
+              Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(50),
+                  margin: const EdgeInsets.all(10),
+                  decoration:BoxDecoration(
+                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(50)) ,
+                  )),
+
+          ],))
       ],)
     );
   }
 }
+
