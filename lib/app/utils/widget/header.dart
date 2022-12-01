@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:project_flutter_pil/app/routes/app_pages.dart';
+import 'package:project_flutter_pil/app/utils/style/AppColors.dart';
 import 'package:unicons/unicons.dart';
 
 class header extends StatelessWidget {
@@ -21,10 +22,10 @@ class header extends StatelessWidget {
             //mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text('Task Management', style: TextStyle(fontSize: 30, color: Colors.grey),),
-            Text('Manage task made easy with friends', style: TextStyle(fontSize: 16, color: Colors.grey),),
+            Text('Task Management', style: TextStyle(fontSize: 30, color: AppColors.primaryText),),
+            Text('Manage task made easy with friends', style: TextStyle(fontSize: 16, color: AppColors.primaryText),),
             ],
-            ),
+          ),
             const Spacer(flex: 1,),
             Expanded(
               flex: 1,
@@ -47,7 +48,7 @@ class header extends StatelessWidget {
             )
             ),
             const SizedBox(width: 20,),
-            const Icon(UniconsLine.bell, color: Colors.grey,),
+            const Icon(UniconsLine.bell, color: AppColors.primaryText, size: 30,),
             const SizedBox(width: 20,),
             GestureDetector(
               onTap: () {
@@ -65,13 +66,17 @@ class header extends StatelessWidget {
               },
               child: Row(
                 children: const [
-                  Text('Sign Out', style: TextStyle(color: Colors.grey),),
+                  Text('Sign Out', style: TextStyle(color: AppColors.primaryText, fontSize: 18),
+                  ),
                   SizedBox(width: 5,),
                   
                 ],
               ),
             ),
-            const Icon(UniconsLine.signout, color: Colors.grey,),
+            const Icon(UniconsLine.signout, 
+            color: AppColors.primaryText,
+            size: 30,
+            ),
 
             //disini
         ],

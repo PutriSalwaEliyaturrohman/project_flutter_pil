@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:project_flutter_pil/app/routes/app_pages.dart';
+import 'package:project_flutter_pil/app/utils/style/AppColors.dart';
 import 'package:unicons/unicons.dart';
 
 class SideBar extends StatelessWidget {
@@ -15,7 +16,7 @@ class SideBar extends StatelessWidget {
       elevation: 0,
       child: Container(
         height: Get.height,
-        color: Colors.blue[100],
+        color: AppColors.primaryBg,
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -27,7 +28,7 @@ class SideBar extends StatelessWidget {
                 width: double.infinity,
                 alignment: Alignment.topCenter,
                 child: const Image(
-                image: AssetImage('assets/icons/icon.png')
+                image: AssetImage('./icons/icon.png')
               ),
             ),
             const SizedBox(
@@ -50,7 +51,7 @@ class SideBar extends StatelessWidget {
                       : BoxDecoration(),
                     child:Icon(Get.currentRoute == '/home'? UniconsLine.laptop 
                     : UniconsLine.laptop, 
-                    color: Colors.grey,
+                    color: AppColors.primaryText,
                     size: 30,),
                   ),
                   const SizedBox(
@@ -59,7 +60,7 @@ class SideBar extends StatelessWidget {
                   const Text(
                   'Home',
                    style: TextStyle(
-                   color: Colors.grey,
+                   color: AppColors.primaryText,
                    fontSize: 16,
                   ),
                   ),
@@ -88,7 +89,7 @@ class SideBar extends StatelessWidget {
                       : BoxDecoration(),
                     child:Icon(Get.currentRoute == '/task'? UniconsLine.cube 
                     : UniconsLine.cube,
-                    color: Colors.grey,
+                    color: AppColors.primaryText,
                     size: 30,),
                   ),
                   const SizedBox(
@@ -97,7 +98,7 @@ class SideBar extends StatelessWidget {
                   const Text(
                   'Task',
                    style: TextStyle(
-                   color: Colors.grey,
+                   color: AppColors.primaryText,
                    fontSize: 16,
                   ),
                   ),
@@ -123,7 +124,7 @@ class SideBar extends StatelessWidget {
                       : BoxDecoration(),
                     child:Icon(Get.currentRoute == '/friends'? UniconsLine.heart 
                     : UniconsLine.heart, 
-                    color: Colors.grey,
+                    color: AppColors.primaryText,
                     size: 30,),
                   ),
                   const SizedBox(
@@ -132,7 +133,7 @@ class SideBar extends StatelessWidget {
                   const Text(
                   'Friends',
                    style: TextStyle(
-                   color: Colors.grey,
+                   color: AppColors.primaryText,
                    fontSize: 16,
                   ),
                   ),
@@ -158,7 +159,7 @@ class SideBar extends StatelessWidget {
                       : BoxDecoration(),
                     child:Icon(Get.currentRoute == '/profile'? UniconsLine.usd_circle 
                     : UniconsLine.user_circle,
-                    color: Colors.grey,
+                    color: AppColors.primaryText,
                     size: 30,),
                   ),
                   const SizedBox(
@@ -167,7 +168,7 @@ class SideBar extends StatelessWidget {
                   const Text(
                   'Profile',
                    style: TextStyle(
-                   color: Colors.grey,
+                   color: AppColors.primaryText,
                    fontSize: 16,
                   ),
                   ),
