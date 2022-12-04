@@ -88,7 +88,7 @@ class HomeView extends GetView<HomeController> {
                 ],
                 ),
              ),
-                // content
+                // content // isi page
                 Expanded(
                   child: Container(
                     padding: !context.isPhone 
