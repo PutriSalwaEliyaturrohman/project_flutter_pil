@@ -22,8 +22,8 @@ class header extends StatelessWidget {
             //mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text('Task Management', style: TextStyle(fontSize: 30, color: AppColors.primaryText),),
-            Text('Manage task made easy with friends', style: TextStyle(fontSize: 16, color: AppColors.primaryText),),
+            Text('Task Management', style: TextStyle(fontSize: 20, color: AppColors.primaryText),),
+            Text('Manage task made easy with friends', style: TextStyle(fontSize: 11, color: AppColors.primaryText),),
             ],
           ),
             const Spacer(flex: 1,),
@@ -69,13 +69,12 @@ class header extends StatelessWidget {
                   Text('Sign Out', style: TextStyle(color: AppColors.primaryText, fontSize: 18),
                   ),
                   SizedBox(width: 5,),
-                  
-                ],
-              ),
-            ),
-            const Icon(UniconsLine.signout, 
+                  const Icon(UniconsLine.signout, 
             color: AppColors.primaryText,
             size: 30,
+            ),
+                ],
+              ),
             ),
 
             //disini
