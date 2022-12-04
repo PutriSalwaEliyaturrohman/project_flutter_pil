@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "164055853814",
+    "project_id": "task-manegement-app",
+    "storage_bucket": "task-manegement-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164055853814:android:67b5ddfdc9bb4031d2dad7",
+        "android_client_info": {
+          "package_name": "com.example.project_flutter_pil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164055853814-tir51eb5nslj4fevd0c9iej98281n0nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM9JfEwFrqJGlN_NoX_BEuYysFds5wT0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164055853814-tir51eb5nslj4fevd0c9iej98281n0nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
